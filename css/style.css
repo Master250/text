@@ -1,0 +1,224 @@
+/*Body*/
+
+body
+{
+    width: 980px;
+}
+#bloc_page
+{
+    display: grid;
+    grid-template-columns: 250px 700px;
+    border: silver 1px solid;
+}
+/*Partie de liseret*/
+#liseret
+{
+    
+    background-color: #FFC107;
+    overflow-wrap: break-word;
+}
+
+#liseret h1
+{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: #FFC107;
+    padding: 5px;
+}
+#liseret section:nth-child(1)
+{
+    text-align: center;
+}
+#liseret section img:nth-child(1)
+{
+    justify-content: center;
+    width: 250px;  
+}
+#liseret section p:nth-child(2)
+{
+    text-align: justify;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-bottom: 180px;
+}
+#liseret section img
+{
+    padding-top: 10px;
+    display: inline-flex;    
+}
+
+/*----------------Contenu du CV----------------*/
+#main
+{
+    padding: 20px;
+    margin: 0px;
+    
+}
+#main header
+{
+    margin-bottom: 110px;
+}
+header span
+{
+    color: #FFC107;
+}
+u
+{
+    text-decoration: #FFC107 underline;
+}
+#main section:nth-child(2)
+{
+    margin-bottom: 20px;
+}
+
+hr
+{
+    color: #FFC107;
+}
+thead:nth-child(odd)
+{
+    font-size: 0.7em;
+    color:black;
+    text-align: left;
+}
+th:nth-child(2)
+{
+    width: 180px;
+}
+thead img:nth-child(1)
+{
+    margin-right: 15px;
+}
+thead img:last-child
+{
+    width: 10px;
+}
+table img[alt="cercle"]
+{
+    width: 20px;
+}
+thead span
+{
+    color: black;
+    font-size: large;
+    text-align: left;
+    
+}
+
+table
+{
+    margin-top: 30px;
+}
+tbody td
+{
+    text-align: justify;
+}
+
+
+section div
+{
+    display: flex;
+}
+section div img
+{
+    width: 30px;
+}
+/*---------------------Bas de page footer---------------------*/
+section div h1,footer #bas_de_page h1
+{
+    margin-left: 20px;
+}
+footer #bas_de_page
+{
+    display: flex;
+    padding-top: 30px;
+    
+}
+#recommandation
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-right: 50px;
+    text-align: justify;
+    line-height: 0.5em;
+}
+
+/*--------------------------Media query responsive design ----------------*/
+
+@media screen and (max-width: 480px){
+    
+   
+
+}
+
+/*Règles CSS pour les appareils*/
+
+/*--------------------------Media query responsive design ----------------*/
+
+@media screen and (max-width: 480px){
+    body 
+    {
+        overflow-wrap: break-word;
+        margin: 0px;
+        margin-right: 0px;
+        
+    }
+    th:nth-child(2)
+    {
+        width: auto;
+    }
+    
+    #liseret section img:nth-child(1)
+    {
+    justify-content: center;
+    width: 50%;  
+    }
+    #liseret
+    {
+        width: 10%;
+        margin: 0px;
+    }
+    #bloc_page
+    {
+        display: flex;
+        height: 50%;
+    }
+    #main
+    {
+        width: 30%;
+    }
+    #liseret section p:nth-child(2)
+    {
+    text-align: justify;
+    flex-wrap: wrap;
+    margin: 0px;
+    margin-bottom: 10px;
+    }
+    #recommandation
+{
+    display: table;
+    padding-top: 10px;
+    }
+}
+
+/*Règles CSS pour les appareils*/
+@media screen and (min-width: 481px) and (max-width:767px){
+    body 
+    {
+        margin: 0px;
+        grid-auto-columns: min-content;
+    }
+
+}
+@media screen and (min-width: 1000px){
+    body 
+    {
+        margin-left: 200px;
+
+    }
+}
+@media screen and (orientation: landscape){
+
+}

@@ -37,7 +37,7 @@ body
     text-align: justify;
     flex-wrap: wrap;
     margin: 30px;
-    margin-bottom: 180px;
+    margin-bottom: 130px;
 }
 #liseret section img
 {
@@ -129,14 +129,14 @@ section div h2,footer #bas_de_page h2
 footer #bas_de_page
 {
     display: flex;
-    padding-top: 30px;
+    padding-top: 60px;
     
 }
 #recommandation
 {
     display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+    justify-content: space-evenly;
+    padding-top: 10px;
     margin-right: 50px;
     text-align: justify;
     line-height: 0.5em;
@@ -229,9 +229,16 @@ footer #bas_de_page
     {
     display: flex;
     justify-content: space-evenly;
-    text-align: center;
+    text-align: left;
+    
     }
-        
+    body 
+    {
+        width: auto;
+        margin-left: 150px;
+        margin-right: 50px;
+    }
+    
 }
 @media screen and (orientation: landscape){
 

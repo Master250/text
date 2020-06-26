@@ -3,22 +3,19 @@
 body
 {
     width: 980px;
-}
-#bloc_page
-{
-    display: grid;
-    grid-template-columns: 250px 700px;
+    display: flex;
     border: silver 1px solid;
 }
+
 /*Partie de liseret*/
 #liseret
 {
-    
+    width: 300px;
     background-color: #FFC107;
     overflow-wrap: break-word;
 }
 
-#liseret h1
+#liseret h2
 {
     text-align: center;
     text-transform: uppercase;
@@ -125,7 +122,7 @@ section div img
     width: 30px;
 }
 /*---------------------Bas de page footer---------------------*/
-section div h1,footer #bas_de_page h1
+section div h2,footer #bas_de_page h2
 {
     margin-left: 20px;
 }
@@ -149,75 +146,92 @@ footer #bas_de_page
 
 @media screen and (max-width: 480px){
     
-   
-
 }
 
 /*Règles CSS pour les appareils*/
 
 /*--------------------------Media query responsive design ----------------*/
 
-@media screen and (max-width: 480px){
+@media all and (max-width: 480px){
     body 
     {
+        display: block;
         overflow-wrap: break-word;
         margin: 0px;
         margin-right: 0px;
-        
-    }
-    th:nth-child(2)
-    {
         width: auto;
+        height: auto;
     }
-    
     #liseret section img:nth-child(1)
     {
     justify-content: center;
-    width: 50%;  
+    width: 60%;  
     }
-    #liseret
+   #liseret, #main
+   {
+       width: auto;
+       text-align: center;
+   }
+   #liseret h2
     {
-        width: 10%;
-        margin: 0px;
-    }
-    #bloc_page
-    {
-        display: flex;
-        height: 50%;
-    }
-    #main
-    {
-        width: 30%;
-    }
-    #liseret section p:nth-child(2)
-    {
-    text-align: justify;
-    flex-wrap: wrap;
-    margin: 0px;
-    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: #FFC107;
+    padding: 5px;
     }
     #recommandation
-{
-    display: table;
+    {
+    display: block;
     padding-top: 10px;
+    text-align: center;
     }
 }
 
 /*Règles CSS pour les appareils*/
-@media screen and (min-width: 481px) and (max-width:767px){
+@media screen and (min-width: 481px) and (max-width:980px){
+    
     body 
     {
-        margin: 0px;
-        grid-auto-columns: min-content;
+        display: flex;
+        overflow-wrap: break-word;
+        width: auto;
+        height: auto;
     }
-
+    #liseret section img:nth-child(1)
+    {
+    justify-content: center;
+    width: 60%;  
+    }
+   #liseret
+   {
+       width: 25%;
+       text-align: center;
+   }
+   #liseret h2
+    {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: #FFC107;
+    padding: 5px;
+    }
+    #recommandation
+    {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
 }
-@media screen and (min-width: 1000px){
-    body 
+@media all and (min-width: 981px){
+    
+    #recommandation
     {
-        margin-left: 200px;
-
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
     }
+        
 }
 @media screen and (orientation: landscape){
 

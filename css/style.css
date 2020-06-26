@@ -27,7 +27,7 @@ body
 {
     text-align: center;
 }
-#liseret section img:nth-child(1)
+#liseret header img
 {
     justify-content: center;
     width: 250px;  
@@ -162,7 +162,7 @@ footer #bas_de_page
         width: auto;
         height: auto;
     }
-    #liseret section img:nth-child(1)
+    #liseret header img
     {
     justify-content: center;
     width: 60%;  
@@ -198,7 +198,7 @@ footer #bas_de_page
         width: auto;
         height: auto;
     }
-    #liseret section img:nth-child(1)
+    #liseret header img
     {
     justify-content: center;
     width: 60%;  

@@ -13,36 +13,38 @@ body
     width: 300px;
     background-color: #FFC107;
     overflow-wrap: break-word;
+    
 }
 
-#liseret h2
-{
-    text-align: center;
-    text-transform: uppercase;
-    background-color: black;
-    color: #FFC107;
-    padding: 5px;
-}
-#liseret section:nth-child(1)
-{
-    text-align: center;
-}
 #liseret header img
 {
     justify-content: center;
     width: 250px;  
+}
+
+#liseret h2
+{
+    text-transform: uppercase;
+    background-color: black;
+    color: #FFC107;
+    padding: 5px;
+    text-align: center;
+}
+#liseret section span:nth-child(1n), #liseret section address:nth-child(2n+1),#liseret section p:nth-child(1n)
+{
+    margin-left:30px;
 }
 #liseret section p:nth-child(2)
 {
     text-align: justify;
     flex-wrap: wrap;
     margin: 30px;
-    margin-bottom: 130px;
+    margin-bottom: 110px;
 }
 #liseret section img
 {
     padding-top: 10px;
-    display: inline-flex;    
+    display: inline-flex;   
 }
 
 /*----------------Contenu du CV----------------*/
@@ -54,7 +56,7 @@ body
 }
 #main header
 {
-    margin-bottom: 110px;
+    margin-bottom: 100px;
 }
 header span
 {
@@ -71,7 +73,10 @@ u
 
 hr
 {
-    color: #FFC107;
+    width: auto;
+    
+    border: 1px solid #FFC107;
+    
 }
 thead:nth-child(odd)
 {
